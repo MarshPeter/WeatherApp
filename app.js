@@ -15,3 +15,5 @@ function getWeatherForecast(cityName) {
     .then((data) => console.log(data))
     .catch((err) => console.error(err));
 }
+
+getWeatherForecast("London");
