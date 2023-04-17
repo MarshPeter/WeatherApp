@@ -1,10 +1,3 @@
-// weather API:
-// b4beec06fb894741986141820230304
-
-// TODO: Set these to environment variables
-const API_KEY = "b4beec06fb894741986141820230304";
-const BASE_URL = "http://api.weatherapi.com/v1";
-
 console.log("Hello World");
 
 // TODO: USE THIS PROPERLY. THE FUNCTION AS IS WORKS.

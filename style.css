@@ -1,15 +1,57 @@
-* {
-  border: 1px solid black;
-}
-
 body {
   padding: 0;
   margin: 0;
+  background-color: #d0fef5;
 }
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+main div {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#location-card h2,
+#weather-card h2 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#location-card input {
+  font-size: 30px;
+  text-align: center;
+  background-color: #89aae6;
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  color: white;
+}
+
+#location-card button {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #202a25;
+  color: white;
+}
+
+#weather-card h3 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#weather-card img {
+  margin-bottom: 50px;
 }
 
 footer {
@@ -22,6 +64,8 @@ footer {
 
 footer button {
   margin: 0 1.5rem;
+  background-color: #89aae6;
+  font-size: 26px;
   width: 3rem;
   height: 3rem;
 }
