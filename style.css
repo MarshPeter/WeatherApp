@@ -36,12 +36,17 @@ main div {
   color: white;
 }
 
-#location-card button {
+#location-card a {
   font-size: 30px;
   padding: 10px;
   border-radius: 10px;
   background-color: #202a25;
   color: white;
+}
+
+#location-card a:hover {
+  background-color: #339955;
+  cursor: pointer;
 }
 
 #weather-card h3 {

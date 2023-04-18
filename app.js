@@ -12,6 +12,7 @@ const farenheightButton = document.getElementById("farenheight");
 // added event Listeners
 celciusButton.addEventListener("click", getCelcius);
 farenheightButton.addEventListener("click", getFarenheight);
+findLocationBtn.addEventListener("click", getLocationData);
 
 // call to get temperature of city location
 async function getWeatherForecast(cityName, callback) {
@@ -20,8 +21,8 @@ async function getWeatherForecast(cityName, callback) {
   return await response.json();
 }
 
-async function getData() {
-  weatherData = await getWeatherForecast("Melbourne");
+async function getData(cityName) {
+  weatherData = await getWeatherForecast(cityName);
   console.log(weatherData);
   displayWeather();
 }
@@ -52,4 +53,10 @@ function getFarenheight() {
   getTemperature();
 }
 
-getData();
+function getLocationData() {
+  city = cityInputField.value;
+  console.log(city);
+  getData(cityInputField.value);
+}
+
+getData("Melbourne");
